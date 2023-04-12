@@ -1,0 +1,20 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>yzm</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <script th:src="@{/js/jquery.min.js}"></script>
+</head>
+
+<body>
+<form method="get" action="/code/validate">
+    <div class="p-new-in">
+        <span class="p-new-inname">验证码</span>
+        <input type="text" name="code" class="p-new-input p-new-w177" placeholder="请输入图片验证码"/>
+    <span class="p-new-code l-mar-r15"> <img src="/code/getCode" class="reloadImage" id="reloadImage"
+                                             width="121" height="40"/> </span>
+        <input type="submit" value="验证" style="color: red;"/>
+    </div>
+</form>
+</body>
+
+</html>
